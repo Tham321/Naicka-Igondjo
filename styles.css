@@ -1,0 +1,133 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and Base Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #000000; /* Noir */
+    color: #ffffff; /* Blanc */
+    padding: 0 20px;
+}
+
+/* Header and Navigation */
+header {
+    background: #d4af37; /* Doré */
+    color: #000000; /* Noir */
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #ffffff; /* Blanc */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Sections */
+section {
+    margin: 20px 0;
+}
+
+h2 {
+    margin-bottom: 10px;
+    color: #d4af37; /* Doré */
+}
+
+.profile-picture img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin-bottom: 20px;
+    border: 3px solid #d4af37; /* Doré */
+}
+
+.project-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.project-item {
+    background: #000000; /* Noir */
+    padding: 15px;
+    border: 1px solid #d4af37; /* Doré */
+    width: calc(50% - 20px);
+    box-shadow: 0 0 10px rgba(212, 175, 55, 0.5); /* Ombre dorée */
+}
+
+.project-item img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    border: 2px solid #d4af37; /* Doré */
+}
+
+/* Form */
+form {
+    background: #000000; /* Noir */
+    padding: 15px;
+    border: 1px solid #d4af37; /* Doré */
+    box-shadow: 0 0 10px rgba(212, 175, 55, 0.5); /* Ombre dorée */
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+    color: #d4af37; /* Doré */
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #d4af37; /* Doré */
+    background-color: #ffffff; /* Blanc */
+    color: #000000; /* Noir */
+}
+
+form button {
+    background: #d4af37; /* Doré */
+    color: #000000; /* Noir */
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background: #d4af37; /* Doré */
+    color: #000000; /* Noir */
+    margin-top: 20px;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    .project-item {
+        width: 100%;
+    }
+}
+
+@media (max-width: 600px) {
+    nav ul li {
+        display: block;
+        margin: 5px 0;
+    }
+}
